@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkında</title>
+    <link rel="stylesheet" href="elul.css">
+</head>
+<body>
+    <!-- Menü çubuğu -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="photos.html">Fotoğraflar</a></li>
+            <li><a href="about.html">Eylülüme</a></li>
+            <li><a href="contact.html">Link</a></li>
+            <li><a href="video.html">Video</a></li>
+        </ul>
+    </nav>
+
+    <!-- Başlık -->
+    <div class="contact-section">
+        <!-- Zarf simgesi -->
+        <img src="zarf.jpg" alt="Zarf" class="envelope-icon" onclick="revealMessage()">
+    
+        <!-- Gizli metin -->
+        <p id="hidden-message" class="hidden">  
+        Canım Elülüm<br>
+        Sana bu hediyeyi hazırlamaya 13 ağustos salı günü başlıyorum.<BR> Bu sefer hepsinden farklı yaratıcı bir hediye yapmak istedim<br>Kod yazmak normalde yorar beni ama senin için yaptığım her şey bana enerji veriyor.<br>
+        Bu senden kaynaklı, gerçekten inanılmaz bir insansın. Her ne kadar inanılmaz olsan da ben sana sonsuz inanıyorum,<br> sonsuz güveniyorum ve inan bana seni sonsuz seviyorum.<br>Bazı insanlar bazı insanlara hediyedir derler.<br>Sen benim bu hayatta aldığım en güzel hediyesin.<br>Sen bu dünyada benim için herşeyden, herkesten daha değerlisin. Bunu lafın gelişi söylemiyorum gerçekten öyle.<br>Aklına gelebilecek ne kadar insan ne kadar nesne varsa hepsinden önce sen varsın.<br>Atlardan bile öncesin. Seni çok sevdiğimi ve her zaman yanında olduğumu unutma. <br>İYİ Kİ DOĞDUN EYLÜLÜMM. 
+        </p>
+    </div>
+    <script>
+        function revealMessage() {
+            // Zarf simgesini gizle
+            document.querySelector('.envelope-icon').style.display = 'none';
+            
+            // Gizli mesajı görünür yap
+            document.getElementById('hidden-message').classList.remove('hidden');
+            document.getElementById('hidden-message').classList.add('visible');
+        }
+    </script>
+  
+</body>
+</html>

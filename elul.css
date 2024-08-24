@@ -1,0 +1,246 @@
+/* Arka plan rengi */
+body {
+    background-color: #00ddff; /* Koyu yeşil arka plan */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px; /* Menü çubuğunun yüksekliği kadar üstten boşluk bırakır */
+}
+
+/* Menü çubuğu stili */
+.menu {
+    background-color: #006629; /* Menü arka plan rengini koyu mavi yapar */
+    overflow: hidden; /* Menü öğelerinin taşmasını engeller */
+    position: fixed; /* Menü çubuğunu sayfanın üstüne sabitler */
+    top: 0; /* Menü çubuğunu sayfanın en üstüne hizalar */
+    width: 100%; /* Menü çubuğunun genişliğini sayfa genişliği kadar yapar */
+    z-index: 1000; /* Menü çubuğunun diğer öğelerin üzerinde kalmasını sağlar */
+}
+
+.menu a {
+    display: block; /* Menü öğelerini blok olarak gösterir */
+    color: #00ff48; /* Menü metin rengini açık mavi yapar */
+    text-align: center; /* Menü metnini merkeze hizalar */
+    padding: 20px 100px; /* Menü öğeleri etrafında boşluk bırakır */
+    text-decoration: none; /* Menü metninin altını çizmez */
+    transition: background-color 0.3s, color 0.3s; /* Arka plan ve metin renginin geçiş süresi */
+}
+
+.menu a:hover {
+    background-color: #00a43f; /* Üzerine gelindiğinde arka plan rengini koyu maviye değiştirir */
+    color: #005f0b; /* Üzerine gelindiğinde metin rengini açık maviye değiştirir */
+}
+
+/* Diğer stil ayarları (değişmedi) */
+
+/* Video konteynerini ortalamak için stil */
+.video-container {
+    display: flex;
+    justify-content: center; /* Yatayda ortalar */
+    align-items: center; /* Dikeyde ortalar */
+    height: 100vh; /* Sayfanın tam yüksekliği */
+}
+
+/* Videonun boyutunu ayarlamak için stil */
+video {
+    max-width: 80%; /* Videonun genişliği %80 olacak şekilde ayarlanır */
+    max-height: 80%; /* Videonun yüksekliği %80 olacak şekilde ayarlanır */
+    border-radius: 10px; /* Köşeleri yuvarlar */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Hafif gölge efekti ekler */
+}
+
+/* Body stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px; /* Menü çubuğunun yüksekliği kadar üstten boşluk bırakır */
+}
+
+/* Menü liste ayarları */
+.menu ul {
+    list-style-type: none; /* Liste işaretlerini kaldırır */
+    margin: 0; /* Liste etrafındaki boşlukları kaldırır */
+    padding: 0; /* Liste etrafındaki iç boşlukları kaldırır */
+    display: flex; /* Menü öğelerini yatayda hizalar */
+    justify-content: center; /* Menü öğelerini yatayda ortalar */
+}
+
+/* Menü öğeleri ayarları */
+.menu li {
+    position: relative; /* Menü öğelerini konumlandırmak için kullanılır */
+}
+
+/* Menü linklerinin ayarları */
+.menu a {
+    display: block; /* Menü öğelerini blok olarak gösterir */
+    
+    text-align: center; /* Menü metnini merkeze hizalar */
+    padding: 20px 100px; /* Menü öğeleri etrafında boşluk bırakır */
+    text-decoration: none; /* Menü metninin altını çizmez */
+    transition: background-color 0.3s, color 0.3s; /* Arka plan ve metin renginin geçiş süresi */
+}
+
+/* Menü linklerinin hover ayarları */
+
+
+/* Menü alt çizgi ayarları */
+.menu li::after {
+    content: ""; /* Alt çizgi oluşturmak için içerik ekler */
+    display: block; /* Alt çizgiyi blok olarak gösterir */
+    left: 0; /* Menü öğesinin sol kenarına hizalar */
+    bottom: 0; /* Menü öğesinin alt kenarına hizalar */
+    width: 0; /* Alt çizginin genişliğini sıfırlar */
+    height: 2px; /* Alt çizginin yüksekliğini ayarlar */
+    background-color: #1fd100; /* Alt çizginin rengini ayarlar */
+    transition: width 0.5s; /* Alt çizginin genişlik geçiş süresi */
+}
+
+/* Menü alt çizgi hover ayarları */
+.menu li:hover::after {
+    width: 100%; /* Üzerine gelindiğinde alt çizgiyi genişletir */
+}
+
+/* Başlık stili */
+header {
+    text-align: center; /* Başlığın merkezde hizalanmasını sağlar */
+    padding: 10px; /* Başlığın etrafında boşluk bırakır */
+    background-color: #04a8c1; /* Başlık arka plan rengini açık gri yapar */
+    margin-top: 50px; /* Menü çubuğunun yüksekliğini aşacak şekilde üstten boşluk bırakır */
+}
+
+/* İçerik alanı stili */
+.content {
+    margin-top: 80px; /* İçeriğin üstünden menü çubuğuna kadar boşluk bırakır */
+    max-width: 600px; /* İçeriğin genişliğini sınırlar */
+    margin: auto; /* İçeriği yatayda ortalar */
+    padding: 20px; /* İçeriğin etrafında boşluk bırakır */
+    font-size: 37px;
+}
+
+/* Fotoğraf galerisi stili */
+.photo-gallery {
+    display: flex;
+    flex-direction: column; /* Fotoğrafları dikey olarak sıralar */
+    align-items: center; /* Fotoğrafları ortalar */
+    gap: 40px; /* Fotoğraflar arasındaki boşluk */
+}
+
+/* Fotoğraf öğesi stili */
+.photo-item {
+    text-align: center; /* Yazıyı fotoğrafın altına ortalar */
+}
+
+/* Fotoğraf stil ayarları */
+.photo-item img {
+    width: 300px; /* Fotoğrafın genişliğini ayarlar */
+    height: auto; /* Fotoğrafın orantılı şekilde yüksekliğini ayarlar */
+    border-radius: 10px; /* Fotoğrafın köşelerini yuvarlar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölge ekler */
+}
+
+/* Yazı stil ayarları */
+.caption {
+    margin-top: 15px; /* Fotoğraf ile yazı arasındaki boşluk */
+    font-size: 20px; /* Yazı boyutu */
+    color: #333; /* Yazı rengi */
+}
+
+/* Footer stili */
+.footer {
+    position: fixed; /* Footer'ı sayfanın altına sabitler */
+    bottom: 0;
+    left: 0; /* Footer'ı sol tarafa hizalar */
+    width: 100%; /* Footer'ın tam genişliğini ayarlar */
+    background-color: #007e17; /* Arka plan rengini ayarlar */
+    text-align: center; /* Yazıyı ortalar */
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px 0; /* Üst ve alt boşluk ayarları */
+    font-size: 16px; /* Yazı boyutu */
+    color: #00f2ff; /* Yazı rengi */
+    border-top: 1px solid #00f2ff; /* Üst sınır çizgisi */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Üst tarafa gölge ekler */
+}
+
+/* İletişim bölümü merkezi ayarları */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Tam ekran yüksekliği */
+    text-align: center; /* Yazıyı ortalar */
+}
+
+/* Zarf simgesi ayarları */
+.envelope-icon {
+    width: 500px; /* Zarf simgesinin genişliği */
+    cursor: pointer; /* Fare imlecini zarfın üstünde değiştirir */
+    transition: transform 0.3s ease; /* Tıklamada hafif büyüme efekti */
+}
+
+/* Zarf simgesine tıklama efekti */
+.envelope-icon:active {
+    transform: scale(1.1);
+}
+
+/* Gizli mesaj başlangıçta görünmez */
+.hidden {
+    display: none; /* Başlangıçta gizler */
+}
+
+/* Mesajın görünmesini sağlayan stil */
+.visible {
+    display: block; /* Mesajı görünür yapar */
+    margin-top: 20px; /* Üstten boşluk bırakır */
+    font-size: 18px; /* Yazı boyutu */
+    color: #333; /* Yazı rengi */
+}
+
+/* Linki ortalamak için kapsayıcı ayarları */
+.link-container {
+    display: flex;
+    justify-content: center; /* Yatayda ortalar */
+    align-items: center; /* Dikeyde ortalar */
+    height: 100vh; /* Sayfanın tam yüksekliği */
+}
+
+/* Linkin stili */
+.centered-link {
+    font-size: 20px; /* Yazı boyutu */
+    color: #05f1f9; /* Link rengi */
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    background-color: #f0f0f0; /* Arka plan rengi */
+    padding: 10px 20px; /* İç boşluk (padding) */
+    border-radius: 5px; /* Kenarları yuvarlar */
+    transition: background-color 0.3s ease; /* Hover efektine geçiş ekler */
+}
+
+/* Link üzerine gelindiğinde arka plan rengi değişir */
+.centered-link:hover {
+    background-color: #e0e0e0;
+}
+
+/* Fotoğraf ve yazıyı ortalamak için stil */
+.photo-text-container {
+    display: flex;
+    flex-direction: column; /* Dikey hizalama için */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; /* Sayfanın tam yüksekliği */
+    text-align: center; /* Yazıyı ortalar */
+}
+
+/* Fotoğraf stil ayarları */
+.center-photo {
+    width: 700px; 
+    height: auto; /* Fotoğrafın genişliği %80 olacak şekilde ayarlanır */
+    border-radius: 10px; /* Köşeleri yuvarlar */
+    margin-bottom: 20px; /* Yazı ile fotoğraf arasında boşluk bırakır */
+}
+
+/* Yazı stil ayarları */
+.photo-caption {
+    font-size: 18px; /* Yazı boyutu */
+    color: #333; /* Yazı rengi */
+}
